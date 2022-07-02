@@ -22,7 +22,7 @@ batch = []
 headers = []
 
 
-with open(f"log8.mxml", 'r', encoding='utf-8') as f:
+with open(f"log9.mxml", 'r', encoding='utf-8') as f:
     all_string = f.read()
 
 matches = re.findall(regex0, all_string, re.DOTALL)
@@ -56,7 +56,7 @@ for match1 in matches1:
     if splited_words[1] == n:
         n = str(int(n) + 1)
 
-        with open("result8.csv", "a", encoding='utf-8', newline='') as f2:
+        with open("result9.csv", "a", encoding='utf-8', newline='') as f2:
             writer = csv.writer(f2)
             writer.writerow(batch)
             print(batch)
